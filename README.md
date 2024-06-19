@@ -70,7 +70,7 @@ The **Professional Profile Parser** is your go-to tool for extracting and analyz
 - **Latent Dirichlet Allocation (LDA)**: For topic modeling, described by:
   $$p(\theta, z, w \mid \alpha, \beta) = p(\theta \mid \alpha) \prod_{n=1}^{N} p(z_n \mid \theta) p(w_n \mid z_n, \beta)$$
 - **Cosine Similarity**: Measuring text similarity:
-  $$\mathcal{cosine^-\(A,B)} = \frac{A \cdot B}{\|A\| \|B\|}$$
+  $$\mathcal{cosine^-\delta} = \frac{A \cdot B}{\|A\| \|B\|}$$
 
 ### 📊 Results
 Unlock deep insights into professional profiles and make informed talent management decisions.
