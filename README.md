@@ -46,7 +46,7 @@ Meet our **Resume Parser with Named Entity Recognition**, a tool designed to str
 - **Named Entity Recognition (NER)**: Utilizing Conditional Random Fields (CRFs) for sequence labeling:
   $$P(y \mid x) = \frac{1}{Z(x)} \exp \left( \sum_{i=1}^{n} \sum_{k} \lambda_k f_k(y_{i-1}, y_i, x, i) \right)$$
 - **Evaluation Metrics**: Precision, Recall, and F1-Score to measure performance:
-  $$\text{Precision} = \frac{TP}{TP + FP}$$, $$\text{Recall} = \frac{TP}{TP + FN}$$, $$\text{F1-Score} = \frac{2 \times \text{Precision} \times \text{Recall}{\text{Precision} + \text{Recall}}$$
+  $$\text{Precision} = \frac{TP}{TP + FP}$$, $$\text{Recall} = \frac{TP}{TP + FN}$$, $$\mathcal{F1}\text{-Score} = \frac{2 \times \text{Precision} \times \text{Recall}{\text{Precision} + \text{Recall}}$$
 
 ### 📊 Results
 Achieve high accuracy in information extraction and elevate your recruitment process to the next level.
