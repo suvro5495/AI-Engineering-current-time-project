@@ -1,6 +1,6 @@
-# 🌟 AI Engineering Projects Showcase 🌟
+# 🌟 AI Engineering Project 🌟
 
-Welcome to the **AI Engineering Projects** repository! This collection features some of the most cutting-edge and innovative projects in the realm of AI, showcasing the immense potential and versatility of modern artificial intelligence technologies. Dive in and explore how these projects leverage advanced algorithms, powerful frameworks, and intricate mathematical insights to create solutions that push the boundaries of what's possible.
+Welcome to my repository! This collection features some of the most cutting-edge and innovative projects in the realm of AI, showcasing the immense potential and versatility of modern artificial intelligence technologies. Dive in and explore how these projects leverage advanced algorithms, powerful frameworks, and intricate mathematical insights to create solutions that push the boundaries of what's possible.
 
 ## 📚 Project 1: OpenAI LangChain GoogleAI Chatbot 🤖
 
