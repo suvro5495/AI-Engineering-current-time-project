@@ -23,7 +23,7 @@ Embark on an exploration of conversational AI with my **OpenAI LangChain GoogleA
   - **$Q$ (Query)**: The set of queries.
   - **$K$ (Key)**: The set of keys.
   - **$V$ (Value)**: The set of values.
-  - **$$\(d_k\)$$**: The dimension of the key vectors.
+  - **$$\(d_k)$$**: The dimension of the key vectors.
 
   The attention mechanism computes a weighted sum of the values $\(V\)$, where the weights are determined by the compatibility of the queries $\(Q\)$ with the keys $\(K\)$.
 
