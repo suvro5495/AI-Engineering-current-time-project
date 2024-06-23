@@ -18,12 +18,24 @@ Embark on an exploration of conversational AI with my **OpenAI LangChain GoogleA
 - **GoogleAI**: Superior NLU & NLG for nuanced understanding.
 
 ### 🧠 Mathematical Insights
-- **Transformers & Attention Mechanism**: The foundation of our language model, mathematically represented as:
+- **Transformers & Attention Mechanism**: The foundation of our language model in **NLP**, mathematically represented as:
   $$\text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V$$
-  
+  - **$Q$ (Query)**: The set of queries.
+  - **$K$ (Key)**: The set of keys.
+  - **$V$ (Value)**: The set of values.
+  - **$$\(d_k\)$$**: The dimension of the key vectors.
+
+  The attention mechanism computes a weighted sum of the values $\(V\)$, where the weights are determined by the compatibility of the queries $\(Q\)$ with the keys $\(K\)$.
+
+## Cross-Entropy Loss
 - **Cross-Entropy Loss**: Ensuring model accuracy by minimizing:
   $$\mathcal{L} = -\sum_{i} y_i \log(\hat{y}_i)$$
+  - **$$\(y_i\)$$**: The true label (either 0 or 1).
+  - **$$\(\hat{y}_i\)$$**: The predicted probability of the instance being in class 1.
+  
+  Cross-Entropy Loss measures the performance of a classification model whose output is a probability value between 0 and 1.
 
+## Named Entity Recognition (NER) with Conditional Random Fields (CRFs)
 ### 📊 Results
 Experience the magic of human-like conversations and see how our chatbot can transform user interactions.
 
@@ -43,10 +55,23 @@ Meet our **Resume Parser with Named Entity Recognition**, a tool designed to str
 - **re (regex)**: Custom pattern matching for tailored extraction.
 
 ### 🧠 Mathematical Insights
-- **Named Entity Recognition (NER)**: Utilizing Conditional Random Fields (CRFs) for sequence labeling:
+- **Named Entity Recognition (NER)**(Utilizing Conditional Random Fields (CRFs) for sequence labeling):
+- NER is used to identify and classify entities in text into predefined categories.
   $$P(y \mid x) = \frac{1}{Z(x)} \exp \left( \sum_{i=1}^{n} \sum_{k} \lambda_k f_k(y_{i-1}, y_i, x, i) \right)$$
+  - **\(P(y \mid x)\)**: The probability of label sequence \(y\) given observation sequence \(x\).
+  - **\(Z(x)\)**: The normalization factor (partition function) ensuring the probabilities sum to 1.
+  - **\(\lambda_k\)**: Parameters to be learned.
+  - **\(f_k\)**: Feature functions.
+  - 
 - **Evaluation Metrics**: Precision, Recall, and F1-Score to measure performance:
   $$\text{Precision} = \frac{TP}{TP + FP}$$, $$\text{Recall} = \frac{TP}{TP + FN}$$, $$\text{F1-Score} = \frac{2 \times \text{Precision} \times \text{Recall}}{\text{Precision} + \text{Recall}}$$
+  - **TP (True Positives)**: The number of correctly predicted positive instances.
+  - **FP (False Positives)**: The number of incorrectly predicted positive instances.
+  - Precision measures the accuracy of the positive predictions.
+  - **FN (False Negatives)**: The number of positive instances that were incorrectly predicted as negative.
+  - Recall measures the ability of the model to identify all relevant instances.
+  - The F1-Score is the harmonic mean of precision and recall, providing a balance between the two metrics.
+  - It is particularly useful when one need to take both false positives and false negatives into account.
 
 ### 📊 Results
 Achieve high accuracy in information extraction and elevate your recruitment process to the next level.
@@ -67,10 +92,24 @@ The **Professional Profile Parser** is your go-to tool for extracting and analyz
 - **sklearn**: Machine learning algorithms for profile analysis.
 
 ### 🧠 Mathematical Insights
-- **Latent Dirichlet Allocation (LDA)**: For topic modeling, described by:
+- **Latent Dirichlet Allocation (LDA)**(For topic modeling, described by):-
   $$p(\theta, z, w \mid \alpha, \beta) = p(\theta \mid \alpha) \prod_{n=1}^{N} p(z_n \mid \theta) p(w_n \mid z_n, \beta)$$
-- **Cosine Similarity**: Measuring text similarity:
+  - **$$\mathcal{(\theta\)}$$**: Topic distribution for documents.
+  - **$$\(z\)$$**: Topic assignment for each word.
+  - **$$\(w\)$$**: Words in documents.
+  - **$$\mathcal{(\alpha, \beta\)}$$**: Hyperparameters for the Dirichlet prior on the per-document topic distributions and per-topic word distribution respectively.
+    
+- **Cosine Similarity**(Measuring text similarity):-
+- Cosine similarity is a measure used to calculate the similarity between two vectors.
+- It is commonly used in text analysis and natural language processing to measure how similar
+  two pieces of text are. The formula for cosine similarity between two vectors $$\(A\)$$ and $$\(B\)$$ is:
   $$\mathcal{cosine^-\delta} = \frac{A \cdot B}{\|A\| \|B\|}$$
+- **Dot Product ( \( A \cdot B \) )**:
+  $$A \cdot B = \mathcal{\sum_{i=1}^{n} A_i B_i}$$
+  This represents the sum of the products of the corresponding entries of the two vectors.
+- **Norm ( $$\( \|A\| \$$) )**:
+  $$\|A\| = \mathcal{\sqrt{\sum_{i=1}^{n} A_i^2}}$$
+  This represents the magnitude (length) of vector $$\(A\)$$.
 
 ### 📊 Results
 Unlock deep insights into professional profiles and make informed talent management decisions.
